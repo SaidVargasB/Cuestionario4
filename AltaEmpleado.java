@@ -6,6 +6,8 @@
 
 package mx.unam.aragon.fes.gui;
 
+import mx.unam.aragon.fes.Empleado;
+
 /**
  *
  * @author Said
@@ -47,20 +49,18 @@ public class AltaEmpleado extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -129,10 +129,6 @@ public class AltaEmpleado extends javax.swing.JFrame {
 
         jTextField10.setText("jTextField10");
 
-        jLabel9.setText("CP:");
-
-        jTextField11.setText("jTextField11");
-
         org.jdesktop.layout.GroupLayout jPanel3Layout = new org.jdesktop.layout.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -147,7 +143,7 @@ public class AltaEmpleado extends javax.swing.JFrame {
                         .add(12, 12, 12)
                         .add(jLabel5)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                        .add(jTextField7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE)
+                        .add(jTextField7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 289, Short.MAX_VALUE)
                         .add(20, 20, 20))
                     .add(jPanel3Layout.createSequentialGroup()
                         .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -159,12 +155,7 @@ public class AltaEmpleado extends javax.swing.JFrame {
                             .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                                 .add(jTextField9, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 453, Short.MAX_VALUE)
                                 .add(jTextField8))
-                            .add(jPanel3Layout.createSequentialGroup()
-                                .add(jTextField10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 158, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(18, 18, 18)
-                                .add(jLabel9)
-                                .add(18, 18, 18)
-                                .add(jTextField11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 93, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                            .add(jTextField10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 158, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel3Layout.setVerticalGroup(
@@ -187,9 +178,7 @@ public class AltaEmpleado extends javax.swing.JFrame {
                 .add(18, 18, 18)
                 .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel8)
-                    .add(jTextField10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(jLabel9)
-                    .add(jTextField11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jTextField10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(136, Short.MAX_VALUE))
         );
 
@@ -199,12 +188,13 @@ public class AltaEmpleado extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel1Layout.createSequentialGroup()
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(jPanel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel1Layout.createSequentialGroup()
                         .add(jLabel2)
                         .add(18, 18, 18)
                         .add(jTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 101, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(jPanel1Layout.createSequentialGroup()
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel1Layout.createSequentialGroup()
                         .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
                             .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel1Layout.createSequentialGroup()
                                 .add(jLabel3)
@@ -218,8 +208,7 @@ public class AltaEmpleado extends javax.swing.JFrame {
                         .add(jTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 273, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                         .add(jTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 269, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(34, Short.MAX_VALUE))
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -248,21 +237,13 @@ public class AltaEmpleado extends javax.swing.JFrame {
 
         jLabel10.setText("Número de empleado:");
 
-        jTextField12.setText("jTextField12");
-
         jLabel11.setText("Departamento:");
 
-        jTextField13.setText("jTextField13");
-
         jLabel12.setText("Sueldo:");
-
-        jTextField14.setText("jTextField14");
 
         jLabel13.setText("$");
 
         jLabel14.setText("Horas extra:");
-
-        jTextField15.setText("jTextField15");
 
         jPanel5.setBackground(new java.awt.Color(153, 153, 255));
 
@@ -277,6 +258,14 @@ public class AltaEmpleado extends javax.swing.JFrame {
             .add(0, 235, Short.MAX_VALUE)
         );
 
+        jTextField11.setText("jTextField11");
+
+        jTextField12.setText("jTextField12");
+
+        jTextField13.setText("jTextField13");
+
+        jTextField14.setText("jTextField14");
+
         org.jdesktop.layout.GroupLayout jPanel4Layout = new org.jdesktop.layout.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -290,17 +279,14 @@ public class AltaEmpleado extends javax.swing.JFrame {
                     .add(jLabel10))
                 .add(18, 18, 18)
                 .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jTextField13)
                     .add(jPanel4Layout.createSequentialGroup()
-                        .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jTextField12, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 149, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jPanel4Layout.createSequentialGroup()
-                                .add(jTextField14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 185, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(jLabel13))
-                            .add(jTextField15, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(0, 545, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .add(jTextField13, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 185, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jLabel13))
+                    .add(jTextField11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 122, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(jTextField12, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 723, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(jTextField14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(27, Short.MAX_VALUE))
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
@@ -309,21 +295,21 @@ public class AltaEmpleado extends javax.swing.JFrame {
                 .addContainerGap()
                 .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel10)
-                    .add(jTextField12, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jTextField11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(18, 18, 18)
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel11)
+                    .add(jTextField12, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(21, 21, 21)
+                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel12)
+                    .add(jLabel13)
                     .add(jTextField13, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(18, 18, 18)
                 .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel12)
-                    .add(jTextField14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(jLabel13))
-                .add(18, 18, 18)
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel14)
-                    .add(jTextField15, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 47, Short.MAX_VALUE)
+                    .add(jTextField14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 38, Short.MAX_VALUE)
                 .add(jPanel5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -474,8 +460,18 @@ public class AltaEmpleado extends javax.swing.JFrame {
         emp.setapPaterno( this.jTextField2.getText() );
         emp.setapMaterno( jTextField.getText() );
         emp.setedad( Integer.parseInt( jTextField4.getText() ) );
-        emp.setCurp( jTextfield5.getText());
-        emp.getDomicilio().setCalle(this.jTextField6.getText());
+        emp.setcurp( jTextfield5.getText());
+        emp.setdomicilio(new Direccion());
+        emp.getdomicilio().setcalle(this.jTextField6.getText());
+        emp.getdomicilio().setnumero(this.jTextField7.getText());
+        emp.getdomicilio().setcolonia(this.jTextField8.getText());
+        emp.getdomicilio().setdelegacion(this.jTextField9.getText());
+        emp.getdomicilio().setestado(this.jTextField10.getText());
+        em.setnumeroEmpleado(Integer.pareInt(this.jTextField11.getText()));
+        emp.setdepartamento(this.jTextField12.getText());
+        emp.setSueldo(Float.parseFloat(this.jTextField13.getText()));
+        emp.setHorasExtra(Integer.parseInt(this.jTextField14.getText()));
+        int confirmar = JOptionPane.showConfirmDialog(this, "¿Deseas guardar estos datos?");
     }//GEN-LAST:event_jButton5MouseClicked
   
     private void limpiarFormulario(){
@@ -491,13 +487,10 @@ public class AltaEmpleado extends javax.swing.JFrame {
         this.jTextField10.setText("");
         this.jTextField10.setColumns(10);
         this.jTextField11.setText("");
+        this.jTextField11.setColumns(10);
         this.jTextField12.setText("");
         this.jTextField13.setText("");
-        this.jTextField14.setText("");
-        this.jTextField14.setColumns(14);
-        this.jTextField15.setText("");
-        
-        
+        this.jTextField14.setText("")
     }
     /**
      * @param args the command line arguments
@@ -554,7 +547,6 @@ public class AltaEmpleado extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -567,7 +559,6 @@ public class AltaEmpleado extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
